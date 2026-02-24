@@ -172,8 +172,8 @@ SPARK/
 | Phase | Status |
 |---|---|
 | Requirements | Complete |
-| Schematic | In progress |
-| PCB Layout | Not started |
+| Schematic | Complete |
+| PCB Layout | Complete |
 | Fabrication | Not started |
 | Validation | Not started |
 
