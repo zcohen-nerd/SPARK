@@ -3,6 +3,8 @@
 ![Status](https://img.shields.io/badge/status-v0.4--in--progress-yellow)
 ![License](https://img.shields.io/badge/license-see%20LICENSE-blue)
 
+![SPARK Board Perspective](images/spark-board-perspective.png)
+
 **SPARK** is a hardened breakout and target interface board for [STLINK-V3MODS](https://www.st.com/en/development-tools/stlink-v3mods.html). The V0.4 architecture emphasizes fault containment, controlled target power distribution, and mixed-signal translation suitable for debug and bring-up in lab environments.
 
 ## Project Overview
