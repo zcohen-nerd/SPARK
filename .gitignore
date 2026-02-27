@@ -173,8 +173,12 @@ out/
 # Miscellaneous
 # =============================================================================
 
+# Local intake folder for AI-assisted imports (never committed)
+Inbox/
+
 # Compressed archives (not for version control)
 *.zip
+!hardware/fabrication/*.zip
 *.tar.gz
 *.7z
 *.rar

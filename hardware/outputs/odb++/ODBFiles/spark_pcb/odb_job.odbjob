@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2026-02-27T13:52:23Z",
+        "GenerationSoftware": {
+            "Application": "Fusion Electronics",
+            "Vendor": "Autodesk",
+            "Version": "9.7.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.1978,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "PCB v41"
+        },
+        "Owner": "Zachary Cohen <zacohen@aacc.edu>",
+        "Size": {
+            "X": 88.9,
+            "Y": 88.9
+        }
+    }
+}
