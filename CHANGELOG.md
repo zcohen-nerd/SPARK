@@ -21,6 +21,9 @@ within the same design generation).
 	- `hardware/fabrication/SPARK PCB.tar`
 	- `hardware/fabrication/SPARK PCB.tgz`
 	- `hardware/outputs/odb++/ODBFiles/`
+- Board render images:
+	- `images/spark-board-top.png`
+	- `images/spark-board-perspective.png`
 
 ### Changed
 - Documentation aligned to V0.4 architecture baseline

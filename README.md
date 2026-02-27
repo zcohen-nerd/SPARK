@@ -106,6 +106,11 @@ SPARK/
 - Fabrication archives: [hardware/fabrication/SPARK PCB.zip](hardware/fabrication/SPARK%20PCB.zip), [hardware/fabrication/SPARK PCB.tar](hardware/fabrication/SPARK%20PCB.tar), [hardware/fabrication/SPARK PCB.tgz](hardware/fabrication/SPARK%20PCB.tgz)
 - ODB++ output tree: [hardware/outputs/odb++/ODBFiles](hardware/outputs/odb++/ODBFiles)
 
+## Board Renders
+
+- Top view: [images/spark-board-top.png](images/spark-board-top.png)
+- Perspective view: [images/spark-board-perspective.png](images/spark-board-perspective.png)
+
 ## Bill of Materials (BOM)
 
 - Master BOM: [bom/bom_master.csv](bom/bom_master.csv)
