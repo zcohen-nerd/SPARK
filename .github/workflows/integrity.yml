@@ -1,0 +1,53 @@
+# Repository-integrity checks for SPARK.
+#
+# These run without any EDA/CAD tooling. They confirm the documentation is
+# internally consistent, links and expected artifacts resolve, and the
+# machine-readable BOM parses cleanly.
+#
+# They do NOT run ERC/DRC, open Fusion, render the board, or verify anything
+# about the physical hardware, its electrical behavior, or its safety. A green
+# check means the repository is tidy - nothing more.
+
+name: integrity
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  repo-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Expected artifacts exist
+        run: node .github/scripts/check-artifacts.mjs
+
+      - name: Links and images resolve
+        run: node .github/scripts/check-links.mjs
+
+      - name: BOM syntax
+        run: node .github/scripts/check-bom.mjs
+
+      - name: Cross-document consistency
+        run: node .github/scripts/check-consistency.mjs
+
+      - name: Markdown lint
+        run: npx --yes markdownlint-cli2
+
+      - name: Guard against non-rendering blob image embeds
+        run: |
+          if grep -rEn '!\[[^]]*\]\(https://github\.com/[^)]*/blob/' --include='*.md' .; then
+            echo "::error::Image embed uses a github.com blob URL; use a relative path."
+            exit 1
+          fi
+          echo "No blob image embeds."

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CERN-OHL-S-2.0 -->
+
 # SPARK V0.4 Interfaces
 
 ## Scope
